@@ -9,6 +9,7 @@ alias ls='ls -G'
 alias ll='ls -la'
 alias ..='cd ..'
 alias idea='idea `pwd`'
+alias geth='sh ~/Projects/Geth/Geth.sh'
 
 function gp() {
     git add .
