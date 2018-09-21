@@ -16,15 +16,9 @@ do
     if [ -d "$REPOSITORIES/$REPO/.git" ]
     then
       cd "$REPOSITORIES/$REPO"
-      git status
-      echo "Fetching"
-      git fetch
-      echo "Pulling"
-      git pull
+      git pull &
     else
       echo "Skipping because it doesn't look like it has a .git folder."
     fi
-    echo "Done at `date`"
-    echo
   fi
 done
